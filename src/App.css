@@ -1,38 +1,252 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #ebd5e0 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Navbar Component*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* Hamburger Toggle button */
+
+.Toggle{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(156, 23, 77,0.9);
+  margin-left: 1rem;
+  margin-top: 1rem;
+  z-index: 100;
 }
 
-.App-link {
-  color: #61dafb;
+.HamburgerWrapper{
+  position: fixed;
+  cursor: pointer;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Hamburger{
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  background-color: white;
+  transition: ease-in-out 0.5s;
+}
+
+.Hamburger::after{
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  top: 0.5rem;
+  background-color: white;
+  transition: ease-in-out 0.5s;
+}
+
+.Hamburger::before{
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  top: -0.5rem;
+  background-color: white;
+  transition: ease-in-out 0.5s;
+}
+
+.ToggleActive .Hamburger{
+  background-color: transparent;
+}
+
+.ToggleActive .Hamburger::after{
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.ToggleActive .Hamburger::before{
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* Navbar Pane */
+
+.NavbarWrapper{
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 55;
+  transition: ease-in-out 1s;
+}
+
+.NavbarPane{
+  height: 100%;
+  width: 250px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 55;
+  margin-left: -500px;
+  background-color: rgba(156, 23, 77,0.9);
+}
+
+.ToggleActive .NavbarPane{
+  animation: SlideIn 0.5s ease-in-out 0ms forwards;
+}
+
+.NavSlide .NavbarPane{
+  animation: SlideOut 0.5s ease-in-out 0ms forwards;
+}
+
+.NavItemHighlight{
+  transition: ease-in-out 0.2s;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  cursor: pointer;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  margin-top:1rem;
+  margin-bottom:1rem;
+  font-size:1.1rem;
+}
+
+.NavItemHighlight:hover{
+  background-color: white;
+  color: black;
+}
+
+.NavItemActive{
+  background-color: white;
+  color: black;
+}
+
+/* Navbar Animation */
+
+@keyframes SlideIn{
+  0%{
+    margin-left: -500px;
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    margin-left: 0px;
+  }
+}
+
+
+@keyframes SlideOut{
+  0%{
+    margin-left: 0px;
+  }
+  100%{
+    margin-left: -500px;
+  }
+}
+
+
+/* Profile Component */
+
+.SocialLink{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 9rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.SocialLink a{
+  color:#9c173a;
+  font-size:1.8rem;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+
+.SocialLink::before{
+  position: absolute;
+  content: "";
+  background-color: rgba(0,0,0,0.2);
+  width: 2px;
+  height: 80px;
+  top: 3rem;
+}
+
+.SocialLink a:hover{
+  color: #e85a80;
+}
+
+.Name{
+  margin-top: 4rem !important;
+}
+
+.Name img{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+}
+
+.Tagline{
+  font-size:1.2rem;
+  margin-top:6rem !important;
+}
+
+/* Common Styling for other components */
+
+.Heading{
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+
+.Heading::before{
+  content: "";
+  background-color: rgba(0,0,0,0.2);
+  height: 100px;
+  width: 2px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 50%;
+}
+
+
+/* Media Queries */
+
+@media(max-width:767px){
+  .SocialLink{
+    padding-top: 5.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .SocialLink p{
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .SocialLink::before{
+    width: 60%;
+    height: 2px;
+    top: 27rem;
+    font-size: 2.5rem;
+  }
+
+  .Tagline{
+    margin-top: 2rem !important;
   }
 }
