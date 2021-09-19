@@ -8,11 +8,14 @@ import Volunteer from './Volunteer';
 import { OWNER } from "../shared/prathik";
 import Skills from './Skills';
 import Experience from './Experience';
+import Project from './Projects';
+
+const URL = window.location.pathname;
 
 export default function Main() {
     return (
         <>
-            <Navbar/>
+            <Navbar URL={URL}/>
             <Header/>
 
             <Switch>
@@ -22,6 +25,7 @@ export default function Main() {
                 <Route exact path="/Volunteer" component={() => <Volunteer owner={OWNER[0]}/>}/>
                 <Route exact path="/Skills" component={() => <Skills owner={OWNER[0]}/>}/>
                 <Route exact path="/Experience" component={() => <Experience owner={OWNER[0]}/>}/>
+                <Route exact path="/Projects" component={() => <Project owner={OWNER[0]}/>}/>
                 <Redirect to="/"/>
             </Switch>
         </>

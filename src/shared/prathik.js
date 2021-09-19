@@ -11,8 +11,7 @@ export const OWNER =
         Mobile: '9176844636',
         resume:'assets/PRATHIK PUGAZHENTHI.pdf',
         Personal_email:'prathik0300@gmail.com',
-        Work_email: 'prathik.pugazhenthi2018@vitstudent.ac.in',
-        About:'Hello everyone, I am Prathik Pugazhenthi and I am pursuing my BTech in Computer Science Engineering from Vellore Institute Of Technology, Vellore. I am currently in my pre-final year. I love programming and developing new things. I also like studying about the updates in the blockchain world and the development of decentralized applications.',
+        Work_email: 'A Computer Science final year grad having interest in developing web-apps and D-apps.Have knowledge in MERN stack,Solidity,Azure for developing scalable and responsive Solutions.',
 
         // TAGLINE
 
@@ -321,9 +320,9 @@ export const OWNER =
                 role:'Summer Intern (Analyst)',
                 organization:'UBS',
                 type:'Internship',
-                location:'Vellore',
+                location:'Hyderabad',
                 start: 'June 2021',
-                End: 'Present',
+                End: 'August 2021',
                 description:`Was a part of IBO India.
 
                 Worked in Alteryx to design efficient workflows to handle large datasets and pre-process them for further analysis.

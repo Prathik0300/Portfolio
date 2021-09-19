@@ -9,7 +9,6 @@ const owner = OWNER;
 export default function Header() {
 
     const social = owner[0].socialLinks.map((item) => {
-        console.log(item.link,item.name);
         return(
                 <p key={item.id}>
                     <a href={item.link} target="blank">

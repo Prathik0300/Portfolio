@@ -207,6 +207,25 @@ body{
 
 /* Common Styling for other components */
 
+.ProjectBtn {
+  margin-left: 1rem;
+}
+
+.ProjectCustomBtn button{
+  background-color: #e85a80;
+  color: #fff;
+
+}
+
+button{
+  outline: none !important;
+}
+
+button:focus,button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .newLine{
   white-space: pre-line;
 }
@@ -230,14 +249,17 @@ body{
   background-color: #e85a80 !important;
   outline: none !important;
   border: none !important;
+  color: #fff !important;
 }
 
 .btn:focus{
   outline: none !important;
   box-shadow: none !important;
 }
+
 .ActiveBtn{
   background-color: #9c173a !important;
+  color: #fff !important;
 }
 
 .AnimateRow{
@@ -259,7 +281,6 @@ body{
   align-items: center;
   justify-content: center;
   margin-right: 3rem;
-  /* animation: DispImg 0.5s ease-in-out forwards; */
 }
 
 .ImageRow img{

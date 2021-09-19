@@ -5,12 +5,16 @@ import {Link} from "react-router-dom";
 var openVal = 0;
 const NavbarValues = ["Education","Certifications","Volunteer","Skills","Experience","Projects"];
 
-
-export default function Navbar() {
+export default function Navbar({URL}) {
 
     const [Active,setActive] = useState(false);
     const [HasOpened,setHasOpened] = useState(false);
     const [ActiveNavItem,setActiveNavItem] = useState(-1);
+
+    useEffect(()=>{
+        var idx = NavbarValues.indexOf(URL.slice(1));
+        setActiveNavItem(idx);
+    },[]);
 
     useEffect(() => {
         if(Active===false && openVal>0){
