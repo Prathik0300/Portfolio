@@ -121,7 +121,7 @@ function Project({owner}){
                     </div>
                     {ShowChartDivId===details.id ? <div style={{display:"flex",alignItems:"center",justifyContent:"center"}} className="col-md-6">
                         <div className="chartDivMargin">
-                            <div className="mb-2 text-center">
+                            <div className="mb-2 mt-4 text-center">
                                 <b>Percentage use of languages in the project : <u>{details.name}</u></b>
                                 </div>
                                 <div>{chartItems[chartItems.length - 1]}

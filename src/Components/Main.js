@@ -9,6 +9,7 @@ import { OWNER } from "../shared/prathik";
 import Skills from './Skills';
 import Experience from './Experience';
 import Project from './Projects';
+import About from './About';
 
 const URL = window.location.pathname;
 
@@ -17,7 +18,6 @@ export default function Main() {
         <>
             <Navbar URL={URL}/>
             <Header/>
-
             <Switch>
                 <Route exact path="/" component={() => <Education owner={OWNER[0]}/>}/>
                 <Route exact path="/Education" component={() => <Education owner={OWNER[0]}/>}/>

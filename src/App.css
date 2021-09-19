@@ -8,8 +8,22 @@ body{
   background-color: #ebd5e0 !important;
 }
 
-/* Navbar Component*/
+/* About Component*/
 
+.AboutHeading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+
+.AboutHeadingContent{
+  width: 70%;
+  text-align: justify;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
 
 /* Hamburger Toggle button */
 

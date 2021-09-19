@@ -11,7 +11,7 @@ export const OWNER =
         Mobile: '9176844636',
         resume:'assets/PRATHIK PUGAZHENTHI.pdf',
         Personal_email:'prathik0300@gmail.com',
-        Work_email: 'A Computer Science final year grad having interest in developing web-apps and D-apps.Have knowledge in MERN stack,Solidity,Azure for developing scalable and responsive Solutions.',
+        about: 'A Computer Science final year grad having interest in developing Web-App and DAPP. Have knowledge of MERN stack,Solidity,Azure for developing Scalable and Responsive Solutions.',
 
         // TAGLINE
 
