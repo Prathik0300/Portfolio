@@ -207,6 +207,10 @@ body{
 
 /* Common Styling for other components */
 
+.newLine{
+  white-space: pre-line;
+}
+
 .Heading{
   margin-top: 5rem !important;
   margin-bottom: 5rem !important;
@@ -222,7 +226,78 @@ body{
   margin-left: 50%;
 }
 
+.btn{
+  background-color: #e85a80 !important;
+  outline: none !important;
+  border: none !important;
+}
 
+.btn:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+.ActiveBtn{
+  background-color: #9c173a !important;
+}
+
+.AnimateRow{
+  transition: ease-in-out 0.5s;
+}
+
+.AnimateRow img{
+  border: 10px groove #9c173a;
+}
+
+.ImageRow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ImageRow div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
+  /* animation: DispImg 0.5s ease-in-out forwards; */
+}
+
+.ImageRow img{
+  width: 400px;
+  height: 300px;
+}
+
+.InImg{
+  animation: DispImg 0.5s ease-in-out forwards;
+}
+
+.OutImg{
+  animation: RemoveImg 0.5s ease-in-out forwards;
+}
+
+@keyframes DispImg{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes RemoveImg{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 /* Media Queries */
 
 @media(max-width:767px){
@@ -249,4 +324,16 @@ body{
   .Tagline{
     margin-top: 2rem !important;
   }
+}
+
+@media(max-width:480px){
+  .ImageRow div{
+    margin-right: 0rem;
+  }
+
+  .ImageRow img{
+    width: 300px;
+    height: 200px;
+  }
+  
 }

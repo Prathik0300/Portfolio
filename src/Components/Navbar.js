@@ -3,7 +3,7 @@ import "../App.css";
 import {Link} from "react-router-dom";
 
 var openVal = 0;
-const NavbarValues = ["Education","Certifications","Volunteering","Skills","Experience","Projects"];
+const NavbarValues = ["Education","Certifications","Volunteer","Skills","Experience","Projects"];
 
 
 export default function Navbar() {

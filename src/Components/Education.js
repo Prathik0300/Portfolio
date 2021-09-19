@@ -26,7 +26,7 @@ export default function Education({owner}) {
     const edu = owner.education.map((item) => {
         return(
             <div key={item.id} className="container-fluid ml-3 mt-4 mb-4">
-                <div className="row">
+                <div className="row AnimateRow">
                     <div className="col-md-1">
                         <FontAwesomeIcon style={{fontSize:"2.2rem"}} icon={item.icon}/>
                     </div>
