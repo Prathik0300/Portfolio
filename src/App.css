@@ -495,6 +495,46 @@ button:active {
   font-weight: bolder;
 }
 
+
+
+#up{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border: 2px solid #9c173a;
+  background-color:#9c173a !important;
+  bottom: 3%;
+  right: 3%;
+  z-index: 99;
+}
+
+#arrow{
+  color: #a6a6a6;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
+
+#up:hover{
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;;
+}
+
+#up:hover #arrow{
+  color: #fff !important; 
+}
+
+
 /* Media Queries */
 
 @media (max-width: 767px) {

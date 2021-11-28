@@ -11,6 +11,7 @@ import Experience from './Experience';
 import Project from './Projects';
 import "../App.css";
 import About from './About';
+import Up from './Up';
 
 const URL = window.location.pathname;
 const owner = OWNER;
@@ -21,6 +22,7 @@ export default function Main() {
             <div className="background">
             <Navbar URL={URL}/>
             <Header/>
+            <Up/>
             <div className="container-fluid">
                 <div className="row mt-5 col-md-12 px-5">
                     <div className="col-md-2 mx-1"></div>
