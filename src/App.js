@@ -6,7 +6,6 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        {/* <Landing/> */}
         <Main/>
       </BrowserRouter>
     </div>
