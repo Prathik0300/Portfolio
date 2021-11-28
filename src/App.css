@@ -491,7 +491,7 @@ button:active {
 }
 
 .fontSel{
-  font-family:sans-serif;
+  font-family:sans-serif !important;
   font-weight: bolder;
 }
 
