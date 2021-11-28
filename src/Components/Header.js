@@ -22,7 +22,7 @@ export default function Header() {
         return(
             <div key={item.id} className="row">
                 <div className="col-md-5 text-center Name">
-                    <img object src={item.image} alt={item.name}/>
+                    <img object src={item.image} alt={item.name} style={{border:"1.5px groove #9c173a"}}/>
                 </div>
 
                 <div className="col-md-5 text-center Tagline">
@@ -44,6 +44,7 @@ export default function Header() {
                             }
                         />
                     </p>
+                    
                 </div>
 
                 <div style={{zIndex:"50"}} className="col-md-2 text-center SocialLink">
@@ -54,7 +55,7 @@ export default function Header() {
     })
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid opacity">
             {profile}
         </div>
     )

@@ -1,4 +1,4 @@
-import {faCertificate, faGraduationCap,faSchool} from '@fortawesome/free-solid-svg-icons';
+import {faGraduationCap,faSchool} from '@fortawesome/free-solid-svg-icons';
 import {FaCode,FaPython,FaJs,FaHtml5,FaCss3Alt,FaBootstrap,FaLaptopCode,FaNodeJs,FaReact,FaEthereum,FaSuitcase,FaHackerrank,FaLinkedin,FaGithubSquare,FaCertificate} from 'react-icons/fa';
 import {SiLeetcode,SiPhp,SiMysql,SiMongodb} from 'react-icons/si';
 export const OWNER = 
@@ -7,11 +7,12 @@ export const OWNER =
         id:0,
         name: 'Prathik Pugazhenthi',
         image: 'assets/Images/prathik.jpg',
+        PortfolioLogo : 'assets/Images/logo.png',
         age: 20,
         Mobile: '9176844636',
         resume:'assets/PRATHIK PUGAZHENTHI.pdf',
         Personal_email:'prathik0300@gmail.com',
-        about: 'A Computer Science final year grad having interest in developing Web-App and DAPP. Have knowledge of MERN stack,Solidity,Azure for developing Scalable and Responsive Solutions.',
+        about: 'Hi, I am Prathik, a Computer Science final year grad having interest and experience in developing Web-App and DAPP. I have working knowledge of MERN stack, Solidity, Azure for developing Scalable and Responsive Solutions.',
 
         // TAGLINE
 

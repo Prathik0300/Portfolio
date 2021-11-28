@@ -47,13 +47,13 @@ export default function Navbar({URL}) {
 
     return (
         <>
-            <div className="Toggle">
+            <div className="Toggle opacity">
                 <div onClick={()=>UpdateState()} className={`HamburgerWrapper ${Active?"ToggleActive":""}`}>
                     <div className="Hamburger"></div>
                 </div>
             </div>
 
-            <div className={`NavbarWrapper ${Active?"ToggleActive":HasOpened?"NavSlide":""}`}>
+            <div className={`NavbarWrapper opacity ${Active?"ToggleActive":HasOpened?"NavSlide":""}`}>
                 <div className="NavbarPane">
                     <div style={{marginTop:"8rem"}}>
                         {NavItems}

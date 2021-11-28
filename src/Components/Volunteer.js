@@ -34,7 +34,7 @@ export default function Volunteer({owner}) {
 
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid opacity">
             <div style={{fontSize:"1.6rem"}} className="row text-center Heading">
                 <b>VOLUNTEER</b>
             </div>

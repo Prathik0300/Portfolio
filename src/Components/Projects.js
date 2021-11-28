@@ -112,10 +112,10 @@ function Project({owner}){
                         </div>
                         <div key={details.id} style={{display:'flex',flexDirection:'row'}} className="mt-4 ProjectCustomBtn">
                             <div>
-                                {details.link ? <Button onClick={() => OpenLink(details.link)}>Project Link</Button> : null}
+                                {details.link ? <Button className="Btn" onClick={() => OpenLink(details.link)}>Project Link</Button> : null}
                             </div>
                             <div>
-                                {details.repo ? <Button className={`ProjectBtn ${isActive}`} onClick={() => RepoInfo(details.id,details.repo)} target="blank">Project Info</Button> : null}
+                                {details.repo ? <Button className={`ProjectBtn Btn ${isActive}`} onClick={() => RepoInfo(details.id,details.repo)} target="blank">Project Info</Button> : null}
                             </div>
                         </div>                    
                     </div>
@@ -139,7 +139,7 @@ function Project({owner}){
     });
 
     return(
-        <div className="container-fluid">
+        <div className="container-fluid opacity">
             <div style={{fontSize:"1.6rem"}} className="row mt-4 mb-5 text-center Heading">
                 <b>PROJECTS</b>
             </div>

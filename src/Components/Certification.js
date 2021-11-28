@@ -6,7 +6,6 @@ import "../App.css";
 export default function Certification({owner}) {
     const [ActiveBtn,setActiveBtn] = useState(-1);
     const [Certificate,setCertificate] = useState(-1);
-    const [RemoveCertificate,setRemoveCertificate] = useState(-1);
 
     useEffect(()=>{
         setActiveBtn(-1);
@@ -44,7 +43,7 @@ export default function Certification({owner}) {
                             <span>Issued {' '} {item.issue} {'- '} {item.expiry}</span>
                         </div>
                         {item.certificate?<div className="mt-1 mb-5 col-md-4 AnimateRow">
-                            <Button  onClick={() => OpenCertificate(item.id)} className={`mt-3 mb-3 btn ${Active}`}>
+                            <Button  onClick={() => OpenCertificate(item.id)} className={`mt-3 Btn mb-3 btn ${Active}`}>
                             <b>Show Certificate</b>
                             </Button>
                             </div>:null}
@@ -65,7 +64,7 @@ export default function Certification({owner}) {
     })
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid opacity">
             <div style={{fontSize:"1.6rem"}} className="row text-center Heading">
                 <b>CERTIFICATIONS</b>
             </div>

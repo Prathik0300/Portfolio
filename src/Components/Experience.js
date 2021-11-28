@@ -5,7 +5,7 @@ export default function Experience({owner}) {
 
     const experience = owner.experience.map((item) => {
         return(
-            <div className="container-fluid mt-4">
+            <div className="container-fluid mt-4 opacity">
                 <div className="row AnimateRow">
                     <div style={{fontSize:"3rem"}} className="col-md-1">
                         {item.logo}

@@ -9,15 +9,27 @@ import { OWNER } from "../shared/prathik";
 import Skills from './Skills';
 import Experience from './Experience';
 import Project from './Projects';
+import "../App.css";
 import About from './About';
 
 const URL = window.location.pathname;
+const owner = OWNER;
 
 export default function Main() {
     return (
         <>
+            <div className="background">
             <Navbar URL={URL}/>
             <Header/>
+            <div className="container-fluid">
+                <div className="row mt-5 col-md-12 px-5">
+                    <div className="col-md-2 mx-1"></div>
+                    <div className="col-md-8 mx-1 fontSel" style={{fontSize:"1.2rem",textAlign:"justify"}}>
+                        <b>{owner[0].about}</b>
+                    </div>
+                    <div className="col-md-2 mx-1"></div>
+                </div>
+            </div>
             <Switch>
                 <Route exact path="/" component={() => <Education owner={OWNER[0]}/>}/>
                 <Route exact path="/Education" component={() => <Education owner={OWNER[0]}/>}/>
@@ -28,6 +40,9 @@ export default function Main() {
                 <Route exact path="/Projects" component={() => <Project owner={OWNER[0]}/>}/>
                 <Redirect to="/"/>
             </Switch>
+            <About/>
+            </div>
+            
         </>
     )
 }
