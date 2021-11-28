@@ -17,6 +17,19 @@ export default function Navbar({URL}) {
     },[]);
 
     useEffect(() => {
+        if(openVal>0){
+            setActive(false);
+        window.scroll({
+            top:600
+        })
+        }
+        else{
+            setActive(false);
+        }
+        
+    },[ActiveNavItem])
+
+    useEffect(() => {
         if(Active===false && openVal>0){
             setHasOpened(true);
         }
