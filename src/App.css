@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster:wght@300&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -493,7 +491,7 @@ button:active {
 }
 
 .fontSel{
-  font-family:'Lobster', cursive;
+  font-family:sans-serif;
   font-weight: bolder;
 }
 
