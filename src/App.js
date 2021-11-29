@@ -7,12 +7,14 @@ function App() {
   const exitPreloader = () => {
     var preloader = document.getElementById('preloader');
     var circle = document.getElementById('circle');
+    var body = document.getElementById('body');
     preloader.style.display= 'none';
     circle.style.display = 'none';
+    body.style.overflow = '';
   }
 
   return (
-    <div onLoad={exitPreloader}>
+    <div id="body" style={{overflow:"hidden"}} onLoad={exitPreloader}>
       <div id="preloader" style={{display:"flex"}}>
         <div id="circle"></div>
         <div id="borderCircle1"></div>
