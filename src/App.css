@@ -415,9 +415,13 @@ a{
   color: #9c173a;
 }
 
-.contacts a:hover{
-  color: #9c173a;
+#contactBtn:hover{
+  background-color: #e85a80 !important;
 }
+
+/* .contacts a:hover{
+  color: #9c173a;
+} */
 
 .ProjectBtn {
   margin-left: 1rem;

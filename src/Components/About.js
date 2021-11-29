@@ -22,14 +22,12 @@ export default function About() {
             </Button>
         </div>
 
-        <div>
-            <Link to="/Portfolio">
-                <Button id="contactBtn" style={{paddingLeft:"1.5rem",paddingRight:"1.5rem"}}>
-                    <a id="ContactLink" href="mailto:prathik0300@gmail.com">
-                        <FaEnvelope style={{fontSize:"1.5rem"}}/>
-                    </a>
-                </Button>
-            </Link>
+        <div style={{marginRight:"0.5rem"}}>
+            <Button id="contactBtn" style={{paddingLeft:"1.5rem",paddingRight:"1.5rem"}}>
+                <a id="ContactLink" href="mailto:prathik0300@gmail.com">
+                    <FaEnvelope style={{fontSize:"1.5rem"}}/>
+                </a>
+            </Button>
         </div>
     </div>
 
