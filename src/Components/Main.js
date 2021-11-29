@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {Switch,Route,Redirect} from "react-router-dom";
 import Navbar from './Navbar';
 import Header from './Header';
@@ -13,10 +13,12 @@ import "../App.css";
 import About from './About';
 import Up from './Up';
 
-const URL = window.location.pathname;
+var URL = window.location.pathname;
 const owner = OWNER;
 
 export default function Main() {
+
+
     return (
         <>
             <div className="background">
