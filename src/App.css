@@ -9,6 +9,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
+  overflow-x: hidden;
   font-weight: 600 !important;
 }
 
@@ -17,8 +18,9 @@ body {
 }
 
 .background{
-  width: 100%;
+  width: 100vw;
   height: 100%;
+  overflow: hidden;
   opacity: 0.97;
   background-color: rgba(235,213,224,0.95) !important;
 }
@@ -29,10 +31,6 @@ html {
 
 ::-webkit-scrollbar {
   width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -51,6 +49,7 @@ html {
   justify-content: center;
   z-index: 999999;
   background-color: #db6786;
+  transition: ease-in-out 0.8s !important; 
 }
 
 #circle{
@@ -60,7 +59,7 @@ html {
   background-color: #571628;
   position: absolute;
   transition: ease-in-out 0.5s;
-  animation: loader 1s ease-in-out 0s infinite normal forwards !important;
+  animation: loader 0.8s ease-in-out 0s infinite normal forwards !important;
  
 } 
 
@@ -74,7 +73,7 @@ html {
   background-image: -webkit-linear-gradient(#9c173a,#571628) !important;
   background-image: -moz-linear-gradient(#9c173a,#571628) !important;
   background-image: -o-linear-gradient(#9c173a,#571628) !important;
-  animation: loader2 1s ease-in-out 0ms infinite normal forwards !important;
+  animation: loader2 0.8s ease-in-out 0ms infinite normal forwards !important;
 }
 
 #borderCircle{
@@ -87,7 +86,7 @@ html {
   background-image: -webkit-linear-gradient(#9c173a,#571628) !important;
   background-image: -moz-linear-gradient(#9c173a,#571628) !important;
   background-image: -o-linear-gradient(#9c173a,#571628) !important;
-  animation: loader1 1s ease-in-out 0ms infinite normal forwards !important;
+  animation: loader1 0.8s ease-in-out 0ms infinite normal forwards !important;
 }
 
 @keyframes loader{
@@ -219,6 +218,7 @@ html {
   top: 0;
   left: 0;
   z-index: 55;
+  scrollbar-width: none;
   transition: ease-in-out 1s;
 }
 
@@ -229,6 +229,7 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
   position: fixed;
+  
   top: 0;
   left: 0;
   z-index: 55;
@@ -628,6 +629,10 @@ button:active {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  }
+
+  .NavbarPane {
+    scrollbar-width: none;
   }
 
   .SocialLink p {
